@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Homework17</string>
+    <string name="app_title"><b>Spiice</b></string>
+    <string name="button_text">Discover the platform</string>
+    <string name="login_text">You have an account? <b>Log-in</b></string>
+    <string name="return_to_signUp">Return to Sign-Up</string>
+
+    <string name="skip">Skip</string>
+    <string name="signup"><b>Sign-up</b></string>
+    <string name="login"><b>Log-in</b></string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="discover_text_screen_1">Find projects from companies \n everywhere in the world</string>
+    <string name="discover_screen_2">Make money while working \n on awesome project</string>
+    <string name="discover_screen_3">Chat with others freelances \n and develop your network </string>
+    <string name="discover_screen_4">Work hard and level up! </string>
+    <string name="discover_screen_5">Enjoy your progress! </string>
+
+</resources>

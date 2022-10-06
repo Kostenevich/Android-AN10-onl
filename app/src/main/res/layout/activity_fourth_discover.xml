@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubbles__4_discover"
+    tools:context=".ThirdDiscoverActivity">
+
+    <TextView
+        android:id="@+id/skip"
+        android:text="@string/skip"
+        style="@style/skip_text" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:text="@string/app_title"
+        style="@style/title_discover" />
+
+    <ImageView
+        android:id="@+id/earth"
+        app:srcCompat="@drawable/ic_arrow"
+        style="@style/Discover_image_custom_style"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:id="@+id/discover_text"
+        android:text="@string/discover_screen_4"
+        style="@style/discover_text" />
+
+    <ImageView
+        android:id="@+id/diagram_first"
+        app:srcCompat="@drawable/ic_diaporama__4"
+        style="@style/diaporama_custom_style"
+        android:contentDescription="@null"/>
+
+</FrameLayout>

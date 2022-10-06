@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="skip_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">top|end</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/title</item>
+    </style>
+
+    <style name="discover_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:textColor">@color/title</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dp120</item>
+    </style>
+
+    <style name="title_discover">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/title</item>
+        <item name="android:layout_gravity">center_horizontal|top</item>
+        <item name="android:layout_margin">@dimen/dp50</item>
+        <item name="android:fontFamily">@font/red_hat_display</item>
+        <item name="android:textSize">@dimen/sp32</item>
+    </style>
+
+    <style name="diaporama_custom_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dp58</item>
+    </style>
+
+    <style name="Discover_image_custom_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_margin">@dimen/dp50</item>
+    </style>
+
+    <style name="CustomInputTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">@dimen/dp290</item>
+        <item name="android:layout_height">@dimen/dp50</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColorHint">@color/purple_hint</item>
+    </style>
+</resources>

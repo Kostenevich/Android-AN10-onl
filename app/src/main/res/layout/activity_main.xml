@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubbles__main_screen"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="@dimen/dp120"
+        android:fontFamily="@font/red_hat_display"
+        android:text="@string/app_title"
+        android:textColor="@color/title"
+        android:textSize="@dimen/sp127" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDiscover"
+        android:layout_width="@dimen/dp263"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="@dimen/dp170"
+        android:background="@drawable/ic_button"
+        android:text="@string/button_text"
+        android:textAllCaps="false"
+        android:textColor="@color/background"
+        android:textSize="@dimen/sp18" />
+
+    <TextView
+        android:id="@+id/logInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/dp120"
+        android:text="@string/login_text"
+        android:textColor="@color/title"
+        android:textSize="@dimen/sp18" />
+
+
+</FrameLayout>
