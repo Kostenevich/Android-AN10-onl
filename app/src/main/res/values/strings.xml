@@ -1,21 +1,49 @@
 <resources>
-    <string name="app_name">Homework17</string>
+    <!-- App strings -->
+    <string name="app_name">CoursesApp</string>
     <string name="app_title"><b>Spiice</b></string>
-    <string name="button_text">Discover the platform</string>
-    <string name="login_text">You have an account? <b>Log-in</b></string>
-    <string name="return_to_signUp">Return to Sign-Up</string>
 
-    <string name="skip">Skip</string>
-    <string name="signup"><b>Sign-up</b></string>
-    <string name="login"><b>Log-in</b></string>
-    <string name="firstname">First Name</string>
-    <string name="lastname">Last Name</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
+    <!-- Discover strings -->
+
     <string name="discover_text_screen_1">Find projects from companies \n everywhere in the world</string>
     <string name="discover_screen_2">Make money while working \n on awesome project</string>
     <string name="discover_screen_3">Chat with others freelances \n and develop your network </string>
     <string name="discover_screen_4">Work hard and level up! </string>
     <string name="discover_screen_5">Enjoy your progress! </string>
+
+    <!-- Buttons strings -->
+    <string name="button_text">Discover the platform</string>
+    <string name="skip">Skip</string>
+    <string name="signup"><b>Sign-up</b></string>
+    <string name="login"><b>Log-in</b></string>
+    <string name="login_text">You have an account? <b>Log-in</b></string>
+    <string name="return_to_signUp">Return to <b>Sign-Up</b> </string>
+
+    <!-- Fields strings -->
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!-- Error strings -->
+    <string name="error_blank">The field cannot be blank</string>
+    <string name="name_error">First Name must contain at least 3 symbols</string>
+    <string name="surname_error">Last Name must contain at least 3 symbols</string>
+    <string name="password_error">Password must contain: capital letter, small letter, number and sign</string>
+    <string name="email_error">Email must have the format: name@example.com</string>
+
+    <!-- Toast strings -->
+    <string name="toast_success">Success!</string>
+    <string name="toast_error">Wrong format!</string>
+
+    <!-- Notes strings -->
+    <string name="add_note"><b>Add note</b></string>
+    <string name="logout">Logout</string>
+    <string name="add_new">Add new</string>
+    <string name="back">Back</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="add">Add</string>
+
 
 </resources>

@@ -9,9 +9,9 @@
 
     <LinearLayout
         android:layout_width="@dimen/dp343"
-        android:layout_height="@dimen/dp412"
+        android:layout_height="550dp"
         android:layout_gravity="top|center_horizontal"
-        android:layout_marginTop="@dimen/dp100"
+        android:layout_marginTop="@dimen/dp50"
         android:background="@drawable/blur_background"
         android:orientation="vertical">
 
@@ -27,57 +27,74 @@
             android:textSize="@dimen/sp27" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/firstNameField"
+            android:id="@+id/firstNameFieldLayout"
             style="@style/CustomInputTextField"
             android:layout_marginTop="@dimen/dp32"
             android:hint="@string/firstname"
             app:boxBackgroundColor="@color/pink_background"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:counterMaxLength="255"
             app:boxStrokeWidth="@dimen/zero">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstNameField"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/lastNameField"
+            android:id="@+id/lastNameFieldLayout"
             style="@style/CustomInputTextField"
             android:layout_marginTop="@dimen/dp24"
             android:hint="@string/lastname"
             app:boxBackgroundColor="@color/pink_background"
-            app:boxStrokeWidth="@dimen/zero">
+            app:counterEnabled="true"
+            app:counterMaxLength="255"
+            app:boxStrokeWidth="@dimen/zero"
+            app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastNameField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/emailField"
+            android:id="@+id/emailFieldLayout"
             style="@style/CustomInputTextField"
             android:layout_marginTop="@dimen/dp24"
             android:hint="@string/email"
+            app:errorEnabled="true"
             app:boxBackgroundColor="@color/pink_background"
             app:boxStrokeWidth="@dimen/zero">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/passwordField"
+            android:id="@+id/passwordFieldLayout"
             style="@style/CustomInputTextField"
             android:layout_marginTop="@dimen/dp24"
             android:hint="@string/password"
             app:boxBackgroundColor="@color/pink_background"
             app:boxStrokeWidth="@dimen/zero"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
@@ -91,7 +108,7 @@
         android:layout_width="@dimen/dp263"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="@dimen/dp170"
+        android:layout_marginBottom="@dimen/dp50"
         android:background="@drawable/ic_button"
         android:fontFamily="sans-serif"
         android:text="@string/signup"
@@ -104,7 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="@dimen/dp120"
+        android:layout_marginBottom="20dp"
         android:text="@string/login_text"
         android:textColor="@color/title"
         android:textSize="@dimen/sp18" />

@@ -13,7 +13,6 @@
     <dimen name="dp32">32dp</dimen>
     <dimen name="dp24">24dp</dimen>
     <dimen name="zero">0dp</dimen>
-    //Strings
     <dimen name="sp127">127sp</dimen>
     <dimen name="sp32">32sp</dimen>
     <dimen name="sp27">27sp</dimen>

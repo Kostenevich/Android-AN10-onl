@@ -49,8 +49,10 @@
 
     <style name="CustomInputTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:layout_width">@dimen/dp290</item>
-        <item name="android:layout_height">@dimen/dp50</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:textColorHint">@color/purple_hint</item>
     </style>
+
+
 </resources>
