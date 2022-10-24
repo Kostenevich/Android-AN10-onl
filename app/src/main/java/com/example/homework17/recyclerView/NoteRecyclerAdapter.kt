@@ -1,8 +1,10 @@
-package com.example.homework17
+package com.example.homework17.recyclerView
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.homework17.R
+import com.example.homework17.model.Note
 
 class NoteRecyclerAdapter : RecyclerView.Adapter<NoteViewHolder>() {
     private var list = arrayListOf<Note>()
@@ -24,6 +26,4 @@ class NoteRecyclerAdapter : RecyclerView.Adapter<NoteViewHolder>() {
         this.list = list
         notifyDataSetChanged()
     }
-
-
 }

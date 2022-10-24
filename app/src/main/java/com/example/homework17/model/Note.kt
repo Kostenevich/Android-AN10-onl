@@ -1,4 +1,4 @@
-package com.example.homework17
+package com.example.homework17.model
 
 import java.time.LocalDateTime
 
@@ -7,5 +7,3 @@ data class Note(
     val message: String?,
     val date: LocalDateTime
 )
-
-

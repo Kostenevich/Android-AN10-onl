@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bubbles_sign_up"
-    tools:context=".LogInActivity">
+    tools:context=".activity.authorizeActivity.LogInActivity">
 
     <LinearLayout
         android:layout_width="@dimen/dp343"

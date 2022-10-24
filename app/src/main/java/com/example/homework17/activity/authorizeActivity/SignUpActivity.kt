@@ -1,20 +1,23 @@
-package com.example.homework17
+package com.example.homework17.activity.authorizeActivity
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns.EMAIL_ADDRESS
-import android.view.Gravity
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
-import androidx.core.widget.addTextChangedListener
+import com.example.homework17.R
+import com.example.homework17.activity.notesActivity.ListOfNotesActivity
+import com.example.homework17.util.TextFieldUtil
+import com.example.homework17.util.ToastUtil
 import com.google.android.material.textfield.TextInputLayout
 
 class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+        val toast = ToastUtil()
+        val text = TextFieldUtil()
 
         val emailLayout: TextInputLayout = findViewById(R.id.emailFieldLayout)
         val firstNameLayout: TextInputLayout = findViewById(R.id.firstNameFieldLayout)
@@ -29,22 +32,24 @@ class SignUpActivity : AppCompatActivity() {
             "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@\$%^&*-]).{6,50}\$".toRegex()
         val emailChecker = EMAIL_ADDRESS.toRegex()
 
-        textListener(firstNameLayout)
-        textListener(lastNameLayout)
-        textListener(passwordLayout)
-        textListener(emailLayout)
+        text.setListener(firstNameLayout)
+        text.setListener(lastNameLayout)
+        text.setListener(passwordLayout)
+        text.setListener(emailLayout)
 
         signUpButton.setOnClickListener {
-            val isFirstNameValid = validation(firstNameLayout, logInChecker, R.string.name_error)
-            val isLastNameValid = validation(lastNameLayout, logInChecker, R.string.surname_error)
-            val isEmailValid = validation(emailLayout, emailChecker, R.string.email_error)
+            val isFirstNameValid =
+                text.isFieldValid(firstNameLayout, logInChecker, R.string.name_error)
+            val isLastNameValid =
+                text.isFieldValid(lastNameLayout, logInChecker, R.string.surname_error)
+            val isEmailValid = text.isFieldValid(emailLayout, emailChecker, R.string.email_error)
             val isPasswordValid =
-                validation(passwordLayout, passwordChecker, R.string.password_error)
+                text.isFieldValid(passwordLayout, passwordChecker, R.string.password_error)
 
             if (isFirstNameValid && isLastNameValid && isEmailValid && isPasswordValid) {
                 startActivity(intentNoteList)
             } else {
-                toast(R.string.toast_error)
+                toast.create(R.string.toast_error)
             }
         }
 
@@ -54,31 +59,6 @@ class SignUpActivity : AppCompatActivity() {
         logInText.setOnClickListener {
             startActivity(intentNextActivity)
         }
-    }
-
-    private fun textListener(fieldLayout: TextInputLayout) {
-        fieldLayout.editText?.addTextChangedListener {
-            it.toString()
-        }
-    }
-
-    private fun toast(toastMessage: Int) {
-        val toastText = getString(toastMessage)
-        val toast = Toast.makeText(applicationContext, toastText, toastText.length)
-        toast.setGravity(Gravity.CENTER, 0, 0)
-        toast.show()
-    }
-
-    private fun validation(
-        fieldLayout: TextInputLayout, checker: Regex, errorMessage: Int
-    ): Boolean {
-        val text = fieldLayout.editText?.text.toString()
-        if (text.matches(checker) && text.isBlank().not()) {
-            fieldLayout.error = null
-            return true
-        } else
-            fieldLayout.error = getString(errorMessage)
-        return false
     }
 }
 

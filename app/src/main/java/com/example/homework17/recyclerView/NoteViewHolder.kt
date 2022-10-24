@@ -1,8 +1,10 @@
-package com.example.homework17
+package com.example.homework17.recyclerView
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.homework17.R
+import com.example.homework17.model.Note
 
 class NoteViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
     fun bind(note: Note) {

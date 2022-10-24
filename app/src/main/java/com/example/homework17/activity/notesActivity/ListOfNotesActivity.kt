@@ -1,4 +1,4 @@
-package com.example.homework17
+package com.example.homework17.activity.notesActivity
 
 import android.content.Intent
 import android.os.Build
@@ -8,8 +8,10 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.homework17.NotesSingleton.listOfNotes
-import java.time.LocalDateTime
+import com.example.homework17.R
+import com.example.homework17.activity.authorizeActivity.SignUpActivity
+import com.example.homework17.model.NotesSingleton.NotesSingleton.listOfNotes
+import com.example.homework17.recyclerView.NoteRecyclerAdapter
 
 class ListOfNotesActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -22,14 +24,6 @@ class ListOfNotesActivity : AppCompatActivity() {
 
         val intentLogOut = Intent(this, SignUpActivity::class.java)
         val intentAddNew = Intent(this, AddNotesActivity::class.java)
-
-
-        val noteTitle = intent.getStringExtra("title")
-        val noteMessage = intent.getStringExtra("message")
-        val noteDate = LocalDateTime.now()
-        val note = Note(noteTitle, noteMessage, noteDate)
-        listOfNotes.add(note)
-
 
 
         findViewById<RecyclerView>(R.id.recyclerNotes).run {
