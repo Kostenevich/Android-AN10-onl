@@ -7,6 +7,8 @@ import android.os.Looper
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.example.homework17.activity.authorizeActivity.LogInActivity
+import com.example.homework17.activity.discoverActivity.FirstDiscoverActivity
 
 val handler = Handler(Looper.getMainLooper())
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bubbles__5_screen"
-    tools:context=".FifthDiscoverActivity">
+    tools:context=".activity.discoverActivity.FifthDiscoverActivity">
 
     <TextView
         android:id="@+id/skip"
